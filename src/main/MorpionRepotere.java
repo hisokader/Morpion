@@ -19,7 +19,15 @@ public class MorpionRepotere {
 
 	public void printCurrentResult(String playerName, String code, int playCount) {
 		value.append(", ");
-		value.append(playCount+"games for "+playerName);	
+		value.append(playCount+" games for "+playerName);	
+	}
+	
+	public String reportGameUntileNow() {
+		return value.delete(0, 2).toString();
+	}
+
+	public String reportEquality() {
+		return "Game Over, equality";
 	}
 
 }

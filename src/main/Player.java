@@ -13,7 +13,7 @@ public class Player {
 		value.append(code);
 	}
 
-	public void play() {
+	public void discountPlayCount() {
 		playCount--;
 	}
 
